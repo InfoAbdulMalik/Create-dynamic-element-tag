@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    height:100vh;
+    background-color:rgb(109, 109, 163);
+}
+.sidebar{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:300px;
+    height:100%;
+    background-color:rgb(80, 61, 61);
+}
+.section{
+    width:calc(100%-300px);
+     height:100%;
+    margin-left:300px;
+    background-color:#ddd;
+}
+.createElementTool, .animation-card{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+} 
+.createElementTool form, .animation-card{
+      display: flex;
+      flex-direction: column;
+      padding:13px;
+      gap:10px;
+}
+.createElementTool select, .createElementTool input, .createElementTool button, #animator{
+    padding:12px;
+}
+.createElementTool button{
+   width:fit-content;
+   border:none;
+}
+.createElementTool button:hover{
+    background-color:darkorange;
+}
+.createElementTool h1, .animation-card h1{
+    color:white;
+}
+.animation-card{
+    display:none;
+}

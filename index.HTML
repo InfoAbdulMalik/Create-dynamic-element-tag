@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Element</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar" id="sidebar">
+        <div class="createElementTool">
+            <h1>Create Element</h1>
+            <div class="createElement">
+                <form onsubmit="createElementTag(event)" name="elementCreator">
+                    <select name="element" id="">
+                        <option value="h1">heading Tage</option>
+                        <option value="p">paragraph Tag</option>
+                        <option value="button">button Tag</option>
+                        <option value="mark">mark Tag</option>
+                    </select>
+                    <input type="text" name="text" placeholder="enter your text" required>
+                    <button type="submit">Create</button>
+                </form>
+            </div>
+            </div>
+            <div class="animation-card" id="animation-card">
+               <h1>Animation</h1>
+                <select id="animator">
+                    <option value="animate__animated animate__bounce animate__infinite">Bounce</option>
+                    <option value="animate__animated animate__flash animate__infinite">Flash</option>
+                    <option value="animate__animated animate__pulse animate__infinite">pause</option>
+                </select>
+            </div>
+            </div>
+    <div class="section">
+      <div class="createElementFile" id="createElementFile">
+
+      </div>
+    </div>
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
